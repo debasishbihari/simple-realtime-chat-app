@@ -1,7 +1,3 @@
-import { useContext, useEffect, useState } from "react";
-import assets from "../../assets/assets";
-import "./ChatBox.css";
-import { AppContext } from "../../context/AppContext";
 import {
   arrayUnion,
   doc,
@@ -9,9 +5,13 @@ import {
   onSnapshot,
   updateDoc,
 } from "firebase/firestore";
-import { db } from "../../config/firebase";
+import { useContext, useEffect, useState } from "react";
 import { toast } from "react-toastify";
+import assets from "../../assets/assets";
+import { db } from "../../config/firebase";
+import { AppContext } from "../../context/AppContext";
 import upload from "../../lib/upload";
+import "./ChatBox.css";
 
 const ChatBox = () => {
   const {

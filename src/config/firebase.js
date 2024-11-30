@@ -93,4 +93,5 @@ const resetPass = async (email) => {
   }
 };
 
-export { signup, login, logout, auth, db,resetPass };
+export { auth, db, login, logout, resetPass, signup };
+

@@ -1,8 +1,8 @@
-import "./RightSidebar.css";
+import { useContext, useEffect, useState } from "react";
 import assets from "../../assets/assets";
 import { logout } from "../../config/firebase";
-import { useContext, useEffect, useState } from "react";
 import { AppContext } from "../../context/AppContext";
+import "./RightSidebar.css";
 
 const RightSidebar = () => {
   const { chatUser, messages } = useContext(AppContext);

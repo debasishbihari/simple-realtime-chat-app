@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import { doc, getDoc, onSnapshot, updateDoc } from "firebase/firestore";
 import { createContext, useEffect, useState } from "react";
-import { auth, db } from "../config/firebase";
 import { useNavigate } from "react-router-dom";
+import { auth, db } from "../config/firebase";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const AppContext = createContext();

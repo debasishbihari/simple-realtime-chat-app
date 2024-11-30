@@ -1,6 +1,3 @@
-import { useNavigate } from "react-router-dom";
-import assets from "../../assets/assets";
-import "./LeftSidebar.css";
 import {
   arrayUnion,
   collection,
@@ -13,10 +10,13 @@ import {
   updateDoc,
   where,
 } from "firebase/firestore";
-import { db } from "../../config/firebase";
 import { useContext, useEffect, useState } from "react";
-import { AppContext } from "../../context/AppContext";
+import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import assets from "../../assets/assets";
+import { db } from "../../config/firebase";
+import { AppContext } from "../../context/AppContext";
+import "./LeftSidebar.css";
 
 const LeftSidebar = () => {
   const navigate = useNavigate();
