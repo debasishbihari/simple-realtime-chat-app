@@ -12,6 +12,7 @@ import { AppContext } from "./context/AppContext";
 const App = () => {
   const navigate = useNavigate();
   const {loadUserData} = useContext(AppContext);
+  
 
   useEffect(() => {
     onAuthStateChanged(auth, async (user) => {
